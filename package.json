@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "allure-commandline": "^2.29.0",
+    "cypress": "^13.8.1",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "mocha-allure-reporter": "^1.4.0"
+  },
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "test": "cypress run --record --key 5aa40a94-2842-4fe0-aa44-c7b609537a14",
+    "cypress:execution-cloud-browser-tags": "npx cypress run --browser chrome --headless --env tags=@Regression",
+    "browser:chrome": "npx cypress run --browser=chrome --headed --reporter mocha-allure-reporter",
+    "report:allure": "allure generate allure-results --clean -o allure-report && allure open  allure-report"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/e2e/web/steps/"
+  },
+
+  "author": "jorge",
+  "license": "ISC"
+}

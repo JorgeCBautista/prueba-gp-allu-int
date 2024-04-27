@@ -23,7 +23,7 @@ jobs:
           ref: gh-pages
           path: gh-pages
 
-      - name: Allure Report action from Inteligenio
+      - name: Allure Report action from marketplace
         uses: JorgeCBautista/allure-report-action@main
         if: always()
         #id: allure-report

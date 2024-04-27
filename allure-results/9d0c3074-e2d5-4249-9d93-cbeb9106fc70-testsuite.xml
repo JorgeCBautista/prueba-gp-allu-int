@@ -1,0 +1,62 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1714243756592' stop='1714243773277'>
+    <name>Login Inteligenio</name>
+    <title>Login Inteligenio</title>
+    <test-cases>
+        <test-case start='1714243756618' status='passed' stop='1714243765864'>
+            <name>Open Page</name>
+            <title>Open Page</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1714243765911' status='broken' stop='1714243766313'>
+            <name>Open Page test 1</name>
+            <title>Open Page test 1</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Cannot read properties of undefined (reading 'web')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'web')
+                    at LoginPage.navigateInteligenio (cypress/e2e/web/pages/login/login-page.js:11:42)
+                    at Context.eval (cypress/e2e/web/steps/login-step.js:7:12)
+                    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)
+                    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1714243766376' status='broken' stop='1714243768983'>
+            <name>login successful</name>
+            <title>login successful</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Step implementation missing for: Yo ingreso a la pagina principal"</message>
+                <stack-trace>Error: Step implementation missing for: Yo ingreso a la pagina principal"
+                    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:199:0)
+                    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)</stack-trace>
+            </failure>
+        </test-case>
+        <test-case start='1714243769022' status='failed' stop='1714243773265'>
+            <name>Login Test</name>
+            <title>Login Test</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Timed out retrying after 4000ms: Expected to find element: `#input-27`, but never found it.</message>
+                <stack-trace>AssertionError: Timed out retrying after 4000ms: Expected to find element: `#input-27`, but never found it.
+                    at Object.username (cypress/e2e/web/pages/login/login-page.js:3:27)
+                    at LoginPage.writeCredentials (cypress/e2e/web/pages/login/login-page.js:14:22)
+                    at Context.eval (cypress/e2e/web/steps/login-step.js:11:12)
+                    at Context.resolveAndRunStepDefinition (node_modules/cypress-cucumber-preprocessor/lib/resolveStepDefinition.js:193:0)
+                    at Context.eval (node_modules/cypress-cucumber-preprocessor/lib/createTestFromScenario.js:27:0)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

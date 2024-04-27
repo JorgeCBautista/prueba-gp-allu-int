@@ -11,8 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Allure Report action from marketplace
-        uses: simple-elf/allure-report-action@master
+      - name: Allure Report action from Inteligenio
+        uses: prueba-gp-allu-int/allure-report-action@main
         if: always()
         #id: allure-report
         with:

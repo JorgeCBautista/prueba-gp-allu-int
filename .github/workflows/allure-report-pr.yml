@@ -12,7 +12,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Allure Report action from Inteligenio
-        uses: prueba-gp-allu-int/allure-report-action@main
+        uses: JorgeCBautista/allure-report-action@main
         if: always()
         #id: allure-report
         with:
